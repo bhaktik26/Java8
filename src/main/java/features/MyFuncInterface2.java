@@ -21,6 +21,6 @@ public interface MyFuncInterface2 {
 	int my1();
 	
 	default void m1() {
-			
+			System.out.println("HELLO");
 	}
 }

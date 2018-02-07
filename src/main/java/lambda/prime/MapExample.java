@@ -22,6 +22,7 @@ public class MapExample {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("nls")
 	public static void main(String[] args) {
 		Map<Integer, String> map = new HashMap<>();
 		map.put(0, "a");

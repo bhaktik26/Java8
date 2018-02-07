@@ -16,33 +16,16 @@ package features;
  */
 public class MyClass implements MyFuncInterface, MyFuncInterface2 {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see features.MyFuncInterface2#my1()
-	 */
 	@Override
 	public int my1() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see features.MyFuncInterface#myMethod()
-	 */
 	@Override
 	public int myMethod() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see features.MyFuncInterface#m1()
-	 */
 	@Override
 	public void m1() {
 		// TODO Auto-generated method stub

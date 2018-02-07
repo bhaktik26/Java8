@@ -22,7 +22,7 @@ public interface MyFuncInterface {
 	// int my1();
 
 	default void m1() {
-
+		System.out.println("HI");
 	}
 
 	static int m2() {
