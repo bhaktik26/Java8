@@ -10,6 +10,7 @@
 
 package lambda.prime;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ForkJoinPool;
@@ -35,9 +36,6 @@ public class StreamExamples {
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e");
 		supplier.get().anyMatch(i -> i == "c");
 		supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b");
-
-		ForkJoinPool pool = ForkJoinPool.commonPool();
-		System.out.println(pool.getParallelism());
 
 	}
 

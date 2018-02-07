@@ -50,16 +50,13 @@ public class CollectExample {
 				.collect(Collectors.toMap(p -> p.getAge(), p -> p.getName(), (name1, name2) -> name1 + "+" + name2));
 		System.out.println(map);
 
-		// Collector<Human, StringJoiner, String> coll = Collector.of(() -> new
-		// StringJoiner(" | "), (sj,h) -> sj.add(h.getName().toUpperCase()),
-		// (sj1,sj2) -> sj1.merge(sj2), StringJoiner::toString);
-		String names = list.stream().collect(Collector.of(() -> new StringJoiner(" | "),
+/*		String names = list.stream().collect(Collector.of(() -> new StringJoiner(" | "),
 				(sj, h) -> sj.add(h.getName().toUpperCase()), (sj1, sj2) -> sj1.merge(sj2), StringJoiner::toString));
 		System.out.println(names);
 
 		String str = list.stream().collect(() -> new StringJoiner(" | "), (sj, h) -> sj.add(h.getName().toUpperCase()),
 				(sj1, sj2) -> sj1.merge(sj2)).toString();
-		System.out.println(str);
+		System.out.println(str);*/
 	}
 
 }
