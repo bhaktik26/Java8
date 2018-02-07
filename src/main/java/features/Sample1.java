@@ -15,6 +15,9 @@ package features;
  * @author 212626994
  */
 public class Sample1 {
+	/**
+	 * @param args
+	 */
 	@SuppressWarnings("nls")
 	public static void main(String args[]) {
 		Runnable r1 = new Runnable() {
