@@ -30,8 +30,8 @@ public class StreamExamples {
 				.forEach(System.out::println);
 
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e");
-		supplier.get().anyMatch(i -> i == "c");
-		supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b");
+		System.out.println(supplier.get().anyMatch(i -> i == "c"));
+		System.out.println(supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b"));
 
 	}
 
