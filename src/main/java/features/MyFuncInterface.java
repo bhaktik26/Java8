@@ -19,7 +19,7 @@ package features;
 public interface MyFuncInterface {
 
 	int myMethod();
-	// int my1();
+	// int my();
 
 	default void m1() {
 		System.out.println("HI");
