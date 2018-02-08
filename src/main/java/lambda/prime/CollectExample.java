@@ -1,12 +1,3 @@
-/*
- * Copyright (c) 2018 General Electric Company. All rights reserved.
- *
- * The copyright to the computer software herein is the property of
- * General Electric Company. The software may be used and/or copied only
- * with the written permission of General Electric Company or in accordance
- * with the terms and conditions stipulated in the agreement/contract
- * under which the software has been supplied.
- */
 
 package lambda.prime;
 
@@ -16,15 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * 
- * @author 212626994
- */
+@SuppressWarnings({ "nls", "javadoc" })
 public class CollectExample {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings({ "nls", "javadoc" })
+
 	public static void main(String args[]) {
 		List<Human> list = new ArrayList<>();
 		list.add(new Human("Abc", 21));
