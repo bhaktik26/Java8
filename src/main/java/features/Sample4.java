@@ -1,12 +1,3 @@
-/*
- * Copyright (c) 2018 General Electric Company. All rights reserved.
- *
- * The copyright to the computer software herein is the property of
- * General Electric Company. The software may be used and/or copied only
- * with the written permission of General Electric Company or in accordance
- * with the terms and conditions stipulated in the agreement/contract
- * under which the software has been supplied.
- */
 
 package features;
 
@@ -17,16 +8,13 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * 
- * @author 212626994
- */
+@SuppressWarnings({ "nls", "javadoc" })
 public class Sample4 {
 
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
@@ -44,11 +32,12 @@ public class Sample4 {
 		System.out.println(li);
 		System.out.println();
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e", "f");
-		String strList = supplier.get().collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+		String strList = supplier.get().collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
+				.toString();
 		System.out.println("String is: " + strList);
 
-		String s = supplier.get().collect(() -> new StringJoiner("."), (sj, v) -> sj.add(v), (sj1, sj2) -> sj1.merge(sj2))
-				.toString();
+		String s = supplier.get()
+				.collect(() -> new StringJoiner("."), (sj, v) -> sj.add(v), (sj1, sj2) -> sj1.merge(sj2)).toString();
 		System.out.println("String - " + s);
 	}
 
