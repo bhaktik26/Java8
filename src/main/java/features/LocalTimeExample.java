@@ -22,7 +22,7 @@ public class LocalTimeExample {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String args[]) {
 		LocalTime currentTime = LocalTime.now();
 		System.out.println("The current time is: " + currentTime);

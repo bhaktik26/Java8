@@ -19,11 +19,11 @@ import java.util.function.Predicate;
  * 
  * @author 212626994
  */
+@SuppressWarnings({ "nls", "javadoc" })
 public class Sample2 {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
 	public static void main(String args[]) {
 		List<Integer> list = new ArrayList<>();
 		list.add(1);

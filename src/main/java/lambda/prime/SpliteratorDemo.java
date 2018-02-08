@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Spliterator;
 
+@SuppressWarnings("javadoc")
 public class SpliteratorDemo {
 
     @SuppressWarnings("nls")

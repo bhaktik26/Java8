@@ -12,7 +12,6 @@ package lambda.prime;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
 /**
@@ -24,7 +23,7 @@ public class DateAPIExamples {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String[] args) {
 
 		LocalDate date = LocalDate.now();

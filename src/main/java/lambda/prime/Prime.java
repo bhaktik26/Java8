@@ -26,8 +26,9 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /*w  w  w. j  a  v  a2s.  c om*/
+@SuppressWarnings({ "nls", "javadoc" })
 public class Prime {
-	@SuppressWarnings("nls")
+
 	public static void main(String[] args) {
 		System.out.println("Is the no prime: " + isPrime(11));
 		System.out.println();

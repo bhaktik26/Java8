@@ -15,6 +15,7 @@ package features;
  * @author 212626994
  */
 
+@SuppressWarnings({ "javadoc", "nls" })
 @FunctionalInterface
 public interface MyFuncInterface {
 

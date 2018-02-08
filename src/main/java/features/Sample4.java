@@ -26,7 +26,7 @@ public class Sample4 {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
@@ -44,11 +44,12 @@ public class Sample4 {
 		System.out.println(li);
 		System.out.println();
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e", "f");
-		String strList = supplier.get().collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+		String strList = supplier.get().collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
+				.toString();
 		System.out.println("String is: " + strList);
 
-		String s = supplier.get().collect(() -> new StringJoiner("."), (sj, v) -> sj.add(v), (sj1, sj2) -> sj1.merge(sj2))
-				.toString();
+		String s = supplier.get()
+				.collect(() -> new StringJoiner("."), (sj, v) -> sj.add(v), (sj1, sj2) -> sj1.merge(sj2)).toString();
 		System.out.println("String - " + s);
 	}
 

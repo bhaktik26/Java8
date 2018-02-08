@@ -14,6 +14,8 @@ package lambda.prime;
  * 
  * @author 212626994
  */
+
+@SuppressWarnings({"javadoc", "nls"})
 public class Human {
 	private String name;
 	private int age;
@@ -65,14 +67,9 @@ public class Human {
 		this.age = age;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
-		return "Human [name=" + name + ", age=" + age + "]";
+		return "Human [name=" + this.name + ", age=" + this.age + "]";
 	}
 
 }

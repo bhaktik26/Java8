@@ -22,6 +22,7 @@ public class StreamExamples {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings({ "javadoc", "nls" })
 	public static void main(String[] args) {
 
 		// of() - create a stream , mapToInt - create a stream of integers ,

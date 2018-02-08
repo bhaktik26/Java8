@@ -25,7 +25,7 @@ public class LocalDateTimeExample {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String args[]) {
 		LocalDateTime currentTime = LocalDateTime.now();
 		System.out.println("The current date time is: " + currentTime);

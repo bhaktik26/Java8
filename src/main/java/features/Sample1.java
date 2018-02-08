@@ -18,7 +18,7 @@ public class Sample1 {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String args[]) {
 		Runnable r1 = new Runnable() {
 
@@ -30,6 +30,8 @@ public class Sample1 {
 		};
 
 		Runnable r2 = () -> System.out.println("Using lambda");
+		r1.run();
+		r2.run();
 
 	}
 }

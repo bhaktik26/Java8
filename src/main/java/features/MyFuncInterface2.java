@@ -7,7 +7,7 @@
  * with the terms and conditions stipulated in the agreement/contract
  * under which the software has been supplied.
  */
- 
+
 package features;
 
 /**
@@ -15,15 +15,16 @@ package features;
  * @author 212626994
  */
 
+@SuppressWarnings({ "javadoc", "nls" })
 @FunctionalInterface
 public interface MyFuncInterface2 {
-	
+
 	int my1();
-	
+
 	default void m1() {
-			System.out.println("HELLO");
+		System.out.println("HELLO");
 	}
-	
+
 	static int m2() {
 		System.out.println("MyFuncInterface2");
 		return 1;

@@ -24,7 +24,7 @@ public class CollectExample {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String args[]) {
 		List<Human> list = new ArrayList<>();
 		list.add(new Human("Abc", 21));

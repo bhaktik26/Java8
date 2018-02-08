@@ -24,7 +24,7 @@ public class FormatterExample {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String[] args) {
 
 		LocalDate date = LocalDate.now();

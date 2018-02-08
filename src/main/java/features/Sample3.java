@@ -18,8 +18,8 @@ import java.util.List;
  * 
  * @author 212626994
  */
+@SuppressWarnings({ "nls", "javadoc" })
 public class Sample3 {
-	@SuppressWarnings("nls")
 	public static void main(String args[]) {
 		List<Integer> list = new ArrayList<>();
 		list.add(1);

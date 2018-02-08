@@ -23,7 +23,7 @@ public class LocalDateExample {
 	/**
 	 * @param args
 	 */
-	@SuppressWarnings("nls")
+	@SuppressWarnings({ "nls", "javadoc" })
 	public static void main(String[] args) {
 
 		// print today's date
