@@ -14,8 +14,6 @@ import java.util.ArrayList;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
-import java.util.StringJoiner;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
@@ -50,13 +48,16 @@ public class CollectExample {
 				.collect(Collectors.toMap(p -> p.getAge(), p -> p.getName(), (name1, name2) -> name1 + "+" + name2));
 		System.out.println(map);
 
-/*		String names = list.stream().collect(Collector.of(() -> new StringJoiner(" | "),
-				(sj, h) -> sj.add(h.getName().toUpperCase()), (sj1, sj2) -> sj1.merge(sj2), StringJoiner::toString));
-		System.out.println(names);
-
-		String str = list.stream().collect(() -> new StringJoiner(" | "), (sj, h) -> sj.add(h.getName().toUpperCase()),
-				(sj1, sj2) -> sj1.merge(sj2)).toString();
-		System.out.println(str);*/
+		/*
+		 * String names = list.stream().collect(Collector.of(() -> new
+		 * StringJoiner(" | "), (sj, h) -> sj.add(h.getName().toUpperCase()),
+		 * (sj1, sj2) -> sj1.merge(sj2), StringJoiner::toString));
+		 * System.out.println(names);
+		 * 
+		 * String str = list.stream().collect(() -> new StringJoiner(" | "),
+		 * (sj, h) -> sj.add(h.getName().toUpperCase()), (sj1, sj2) ->
+		 * sj1.merge(sj2)).toString(); System.out.println(str);
+		 */
 	}
 
 }

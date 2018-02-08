@@ -25,8 +25,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import org.springframework.core.env.SystemEnvironmentPropertySource;
-
 /*w  w  w. j  a  v  a2s.  c om*/
 public class Prime {
 	@SuppressWarnings("nls")
