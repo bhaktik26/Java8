@@ -26,6 +26,7 @@ public interface MyFuncInterface {
 	}
 
 	static int m2() {
+		System.out.println("MyFuncInterface");
 		return 0;
 	}
 }

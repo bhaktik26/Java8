@@ -23,4 +23,9 @@ public interface MyFuncInterface2 {
 	default void m1() {
 			System.out.println("HELLO");
 	}
+	
+	static int m2() {
+		System.out.println("MyFuncInterface2");
+		return 1;
+	}
 }

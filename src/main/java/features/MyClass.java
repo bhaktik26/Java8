@@ -32,4 +32,15 @@ public class MyClass implements MyFuncInterface, MyFuncInterface2 {
 		MyFuncInterface.super.m1();
 	}
 
+	static int m2() {
+		System.out.println("MyClass");
+		return 3;
+	}
+
+	public static void main(String args[]) {
+		System.out.println("Main");
+		MyFuncInterface.m2();
+		m2();
+	}
+
 }
