@@ -14,7 +14,7 @@ public class Sample4 {
 	/**
 	 * @param args
 	 */
-	
+
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
@@ -24,8 +24,10 @@ public class Sample4 {
 		// print the square of all elements in the list
 		list.forEach(i -> System.out.println(i * i));
 		System.out.println();
+		System.out.println("Example of Predicate - anyMatch: ");
 		System.out.println("Element present in list: " + list.stream().anyMatch(i -> i == 4));
 		System.out.println();
+		System.out.println("Example of Consumer - peek: ");
 		System.out.println(list.stream().filter(i -> i > 4).peek(i -> System.out.println(i)).filter(i -> i > 10)
 				.peek(i -> System.out.println(i)).collect(Collectors.toList()));
 		System.out.println();

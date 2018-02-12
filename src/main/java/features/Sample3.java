@@ -15,6 +15,8 @@ public class Sample3 {
 		list.add(10);
 		list.add(8);
 		list.add(7);
+		System.out.println("Example of Function - map: ");
+		System.out.println("Illustrating Higher efficiency with laziness: ");
 		System.out.println("Square of Min even no greater than 3 and less than 10: " + sqOfMin(list));
 		System.out.println();
 		System.out.println("Result: " + multiply(list));

@@ -20,7 +20,10 @@ public class Sample2 {
 		System.out.println("Sum of squares of nos greater than 7: " + sumOfSquaresGreaterThan7(list));
 		System.out
 				.println("Sum of squares of nos greater than 7 using lambda: " + lambdaSumOfSquaresGreaterThan7(list));
+		System.out.println();
+		System.out.println("Illustrating passing behaviours into methods: ");
 		System.out.println("Sum of squares of even nos: " + lambdaSumOfSquaresBasedOnCond(list, num -> num % 2 == 0));
+		System.out.println("Sum of squares of nos less than 5: " + lambdaSumOfSquaresBasedOnCond(list, num -> num < 5));
 	}
 
 	/**
