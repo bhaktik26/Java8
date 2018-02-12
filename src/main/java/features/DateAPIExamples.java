@@ -1,5 +1,5 @@
 
-package lambda.prime;
+package features;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -21,15 +21,18 @@ public class DateAPIExamples {
 
 		// check if today's date is after a specified date
 		System.out.println("Is today after 01-02-2018? :" + date.isAfter(LocalDate.of(2018, 2, 1)));
+		System.out.println();
 
 		// Create LocalDateTime from LocalDate
 		System.out.println("Date Time: " + date.atTime(LocalTime.now()));
+		System.out.println();
 
 		// today plus 5 days
 		System.out.println("Date after 5 days from today: " + date.plusDays(5));
 
 		// today minus 1 month
 		System.out.println("Date 1 month before: " + date.minusMonths(1));
+		System.out.println();
 
 		// TemporalAdjusters
 		System.out.println("Last day of the current month: " + date.with(TemporalAdjusters.lastDayOfMonth()));
