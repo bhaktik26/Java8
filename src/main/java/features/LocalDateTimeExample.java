@@ -20,6 +20,7 @@ public class LocalDateTimeExample {
 
 		LocalDateTime dateTime = LocalDateTime.of(LocalDate.now(), LocalTime.now());
 		System.out.println("The current date time is: " + dateTime);
+		System.out.println();
 
 		LocalDateTime ldt = LocalDateTime.of(2017, Month.DECEMBER, 23, 14, 34, 07);
 		System.out.println("The specified date time is: " + ldt);
@@ -30,6 +31,7 @@ public class LocalDateTimeExample {
 		 */
 		LocalDateTime zoneTime = LocalDateTime.now(ZoneId.of("Asia/Kolkata"));
 		System.out.println("The date time of the specified zone is: " + zoneTime);
+		System.out.println();
 
 		LocalDateTime parseTime = LocalDateTime.parse("2018-01-31T11:45:03");
 		System.out.println("The parsed time is: " + parseTime);

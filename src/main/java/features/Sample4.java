@@ -23,6 +23,7 @@ public class Sample4 {
 		list.add(20);
 		// print the square of all elements in the list
 		list.forEach(i -> System.out.println(i * i));
+		System.out.println();
 		System.out.println("Element present in list: " + list.stream().anyMatch(i -> i == 4));
 		System.out.println();
 		System.out.println(list.stream().filter(i -> i > 4).peek(i -> System.out.println(i)).filter(i -> i > 10)
