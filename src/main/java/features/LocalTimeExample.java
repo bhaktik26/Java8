@@ -13,6 +13,8 @@ public class LocalTimeExample {
 	 */
 	
 	public static void main(String args[]) {
+		
+		System.out.println("----------LocalTime----------");
 		LocalTime currentTime = LocalTime.now();
 		System.out.println("The current time is: " + currentTime);
 
