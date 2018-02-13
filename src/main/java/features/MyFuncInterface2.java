@@ -12,7 +12,7 @@ public interface MyFuncInterface2 {
 	}
 
 	static int m2() {
-		System.out.println("MyFuncInterface2");
+		System.out.println("In m2() of MyFuncInterface2");
 		return 1;
 	}
 }
