@@ -1,7 +1,7 @@
 
 package features;
 
-
+@SuppressWarnings({ "javadoc", "nls" })
 public class MyClass implements MyFuncInterface, MyFuncInterface2 {
 
 	@Override
@@ -16,17 +16,15 @@ public class MyClass implements MyFuncInterface, MyFuncInterface2 {
 
 	@Override
 	public void m1() {
-		// TODO Auto-generated method stub
-		MyFuncInterface.super.m1();
+		// MyFuncInterface.super.m1();
+		System.out.println("My method m1()");
 	}
 
-	@SuppressWarnings({ "javadoc", "nls" })
 	static int m2() {
-		System.out.println("MyClass");
+		System.out.println("In m2() of MyClass");
 		return 3;
 	}
 
-	@SuppressWarnings({ "javadoc", "nls" })
 	public static void main(String args[]) {
 		System.out.println("Main");
 		MyFuncInterface.m2();

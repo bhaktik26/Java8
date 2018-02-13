@@ -15,6 +15,8 @@ public class LocalDateTimeExample {
 	 */
 
 	public static void main(String args[]) {
+		
+		System.out.println("----------LocalDateTime----------");
 		LocalDateTime currentTime = LocalDateTime.now();
 		System.out.println("The current date time is: " + currentTime);
 

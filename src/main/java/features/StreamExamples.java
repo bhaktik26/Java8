@@ -1,5 +1,5 @@
 
-package lambda.prime;
+package features;
 
 import java.util.function.Supplier;
 import java.util.stream.Stream;

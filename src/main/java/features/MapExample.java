@@ -28,8 +28,10 @@ public class MapExample {
 		System.out.println("Removed: " + map.remove(5, "5b"));
 		System.out.println("Value is: " + map.get(5));
 		System.out.println();
+		// if that key doesnt exist value is added for it
 		map.merge(7, "val7", (val, newVal) -> val.concat(newVal));
 		System.out.println("Value assigned: " + map.get(7));
+		// if it exists value is appended
 		map.merge(7, "7", (val, newVal) -> val.concat(newVal));
 		System.out.println("Value merged: " + map.get(7));
 

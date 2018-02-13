@@ -14,6 +14,8 @@ public class LocalDateExample {
 	
 	public static void main(String[] args) {
 
+		System.out.println("----------LocalDate----------");
+		
 		// print today's date
 		LocalDate currentDate = LocalDate.now();
 		System.out.println("Today's date = " + currentDate);
@@ -33,7 +35,7 @@ public class LocalDateExample {
 
 		// print the date with the specified epoch-date. Epoch date is
 		// 1970-01-01
-		LocalDate ld = LocalDate.ofEpochDay(-5);
+		LocalDate ld = LocalDate.ofEpochDay(5);
 		System.out.println("Date with the specified epoch-day: " + ld);
 		System.out.println();
 
