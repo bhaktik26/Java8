@@ -1,5 +1,5 @@
 
-package features;
+package lambda.prime;
 
 import java.util.HashMap;
 import java.util.Map;
