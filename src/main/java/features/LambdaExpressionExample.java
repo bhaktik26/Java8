@@ -2,7 +2,7 @@
 package features;
 
 @SuppressWarnings({ "nls", "javadoc" })
-public class Sample1 {
+public class LambdaExpressionExample {
 	/**
 	 * @param args
 	 */
