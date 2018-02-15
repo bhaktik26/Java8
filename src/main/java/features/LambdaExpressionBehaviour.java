@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 @SuppressWarnings({ "nls", "javadoc" })
-public class Sample2 {
+public class LambdaExpressionBehaviour {
 	/**
 	 * @param args
 	 */

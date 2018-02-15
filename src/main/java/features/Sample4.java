@@ -16,24 +16,14 @@ public class Sample4 {
 	 */
 
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
+		/*List<Integer> list = new ArrayList<>();
 		list.add(1);
 		list.add(4);
 		list.add(10);
 		list.add(20);
 		// print the square of all elements in the list
 		list.forEach(i -> System.out.println(i * i));
-		System.out.println();
-		System.out.println("Example of Predicate - anyMatch: ");
-		System.out.println("Element present in list: " + list.stream().anyMatch(i -> i == 4));
-		System.out.println();
-		System.out.println("Example of Consumer - peek: ");
-		System.out.println(list.stream().filter(i -> i > 4).peek(i -> System.out.println(i)).filter(i -> i > 10)
-				.peek(i -> System.out.println(i)).collect(Collectors.toList()));
-		System.out.println();
-		List<Integer> li = list.parallelStream().collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
-		System.out.println(li);
-		System.out.println();
+		System.out.println();*/
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e", "f");
 		String strList = supplier.get().collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
 				.toString();
