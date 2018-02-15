@@ -4,11 +4,13 @@ package features;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("javadoc")
 public class PredicateExample {
 
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("nls")
 	public static void main(String[] args) {
 
 		List<Integer> list = new ArrayList<>();

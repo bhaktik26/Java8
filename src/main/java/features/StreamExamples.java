@@ -16,7 +16,7 @@ public class StreamExamples {
 		// mapToObj - create obj stream
 		Stream.of(1.0, 2.0, 3.0).mapToInt(Double::intValue).peek(i -> System.out.println(i)).mapToObj(i -> "s" + i)
 				.forEach(System.out::println);
-
+		
 	}
 
 }

@@ -6,11 +6,13 @@ import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
+@SuppressWarnings("javadoc")
 public class SupplierExample {
 
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("nls")
 	public static void main(String[] args) {
 		
 		List<Integer> list = new ArrayList<>();

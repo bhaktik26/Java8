@@ -1,29 +1,19 @@
 
 package features;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.StringJoiner;
 import java.util.function.Supplier;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @SuppressWarnings({ "nls", "javadoc" })
-public class Sample4 {
+public class StreamCollectExample {
 
 	/**
 	 * @param args
 	 */
 
 	public static void main(String[] args) {
-		/*List<Integer> list = new ArrayList<>();
-		list.add(1);
-		list.add(4);
-		list.add(10);
-		list.add(20);
-		// print the square of all elements in the list
-		list.forEach(i -> System.out.println(i * i));
-		System.out.println();*/
+
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e", "f");
 		String strList = supplier.get().collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
 				.toString();

@@ -5,11 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("javadoc")
 public class ConsumerExample {
 
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("nls")
 	public static void main(String[] args) {
 
 		System.out.println("Consumer Example: ");
