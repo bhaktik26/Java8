@@ -17,7 +17,7 @@ public class LambdaExpressionExample {
 			}
 		};
 
-		Runnable r2 = () -> System.out.println("Using lambda");
+		Runnable r2 = () -> System.out.println("Using lambda"); 
 		r1.run();
 		r2.run();
 

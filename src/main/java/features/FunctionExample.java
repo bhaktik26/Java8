@@ -14,7 +14,11 @@ public class FunctionExample {
 
 	public static void main(String[] args) {
 		System.out.println("Function Example: ");
-		Stream.of(1.0, 2.0, 3.0).map(i -> i * i).mapToInt(Double::intValue).forEach(i -> System.out.println(i));
+		Stream.of(1.0, 2.0, 3.0)
+				.map(i -> i * i)
+				.mapToInt(Double::intValue)
+				.forEach(i -> System.out.println(i));
+		
 		System.out.println();
 
 		List<Integer> list = new ArrayList<>();
@@ -35,7 +39,8 @@ public class FunctionExample {
 	private static int sum(List<Integer> list) {
 
 		// list.stream().reduce((a,b) -> a+b);
-		return list.stream().reduce(0, (a, b) -> a + b);
+		return list.stream()
+							.reduce(0, (a, b) -> a + b);
 	}
 
 }

@@ -20,7 +20,8 @@ public class SupplierExample {
 		list.add(4);
 		list.add(10);
 		list.add(20);
-		List<Integer> li = list.parallelStream().collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
+		List<Integer> li = list.parallelStream()
+												.collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
 		System.out.println(li);
 		System.out.println();
 		System.out.println("Stream reusability using Supplier: ");
