@@ -22,12 +22,19 @@ public class SupplierExample {
 		list.add(20);
 		List<Integer> li = list.parallelStream()
 												.collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
-		System.out.println(li);
+		System.out.println("Elements of list: " + li);
 		System.out.println();
+		
+		Stream<Integer> stream = Stream.of(new Integer[] { 1, 2, 3 });
+		stream.forEach(System.out::println);
+		//stream.count();
+		
 		System.out.println("Stream reusability using Supplier: ");
 		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e");
 		System.out.println(supplier.get().anyMatch(i -> i == "c"));
 		System.out.println(supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b"));
+		
+		
 
 	}
 
