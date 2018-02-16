@@ -25,8 +25,12 @@ public class ConsumerExample {
 		list.forEach(i -> System.out.println(i));
 		System.out.println();
 		System.out.println("Example of Consumer - peek: ");
-		System.out.println(list.stream().filter(i -> i > 4).peek(i -> System.out.println(i)).filter(i -> i > 9)
-				.peek(i -> System.out.println(i)).collect(Collectors.toList()));
+		System.out.println(list.stream()
+								.filter(i -> i > 4)
+								.peek(i -> System.out.println(i))
+								.filter(i -> i > 9)
+								.peek(i -> System.out.println(i))
+								.collect(Collectors.toList()));
 	}
 
 }

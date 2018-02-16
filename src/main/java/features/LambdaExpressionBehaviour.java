@@ -51,7 +51,10 @@ public class LambdaExpressionBehaviour {
 	 * @return
 	 */
 	public static int lambdaSumOfSquaresGreaterThan7(List<Integer> l) {
-		return l.stream().filter(num -> num > 7).mapToInt(num -> num * num).sum();
+		return l.stream()
+				 .filter(num -> num > 7)
+				 .mapToInt(num -> num * num)
+				 .sum();
 	}
 
 	/**
@@ -61,7 +64,10 @@ public class LambdaExpressionBehaviour {
 	 * @return
 	 */
 	public static int lambdaSumOfSquaresBasedOnCond(List<Integer> l, Predicate<Integer> predicate) {
-		return l.stream().filter(predicate).mapToInt(num -> num * num).sum();
+		return l.stream() 
+				 .filter(predicate)
+				 .mapToInt(num -> num * num)
+				 .sum();
 	}
 
 }

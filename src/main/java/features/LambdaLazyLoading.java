@@ -20,8 +20,13 @@ public class LambdaLazyLoading {
 	}
 
 	public static int sqOfMin(List<Integer> l) {
-		return l.stream().filter(LambdaLazyLoading::isEven).filter(LambdaLazyLoading::isGreaterThan3).filter(LambdaLazyLoading::isLessThan10)
-				.min(Comparator.naturalOrder()).map(i -> i * i).get();
+		return l.stream()
+				 .filter(LambdaLazyLoading::isEven)
+				 .filter(LambdaLazyLoading::isGreaterThan3)
+				 .filter(LambdaLazyLoading::isLessThan10)
+				 .min(Comparator.naturalOrder())
+				 .map(i -> i * i)
+				 .get();
 
 	}
 
