@@ -15,6 +15,18 @@ public class SupplierExample {
 	@SuppressWarnings("nls")
 	public static void main(String[] args) {
 		
+		Stream<Integer> stream = Stream.of(new Integer[] { 1, 2, 3 });
+		System.out.println("Stream elements are - ");
+		stream.forEach(System.out::println);
+		//stream.count();
+		System.out.println();
+		
+		System.out.println("Stream reusability using Supplier: ");
+		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e");
+		System.out.println(supplier.get().anyMatch(i -> i == "c"));
+		System.out.println(supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b"));
+		System.out.println();
+		
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
 		list.add(4);
@@ -22,12 +34,12 @@ public class SupplierExample {
 		list.add(20);
 		List<Integer> li = list.parallelStream()
 												.collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
-		System.out.println(li);
-		System.out.println();
-		System.out.println("Stream reusability using Supplier: ");
-		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e");
-		System.out.println(supplier.get().anyMatch(i -> i == "c"));
-		System.out.println(supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b"));
+		System.out.println("Elements of list: " + li);
+		
+		
+
+		
+		
 
 	}
 

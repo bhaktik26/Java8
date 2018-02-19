@@ -46,6 +46,7 @@ public class Prime {
 		// creating stream of integer nos
 		Stream<Integer> stream = Stream.of(new Integer[] { 1, 2, 3 });
 		stream.forEach(System.out::println);
+		//stream.count();
 		System.out.println("//////////////////");
 		// chars - ascii values
 		Stream<String> stream2 = Stream.generate(() -> "abc").limit(5);

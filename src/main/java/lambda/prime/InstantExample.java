@@ -1,6 +1,7 @@
 
 package lambda.prime;
 
+import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -17,7 +18,7 @@ public class InstantExample {
 	public static void main(String[] args) {
 		Instant currentTime = Instant.now();
 		System.out.println("The current time is: " + currentTime);
-		
+
 		System.out.println(System.currentTimeMillis());
 		System.out.println();
 		System.out.println(ZonedDateTime.now());
@@ -25,7 +26,9 @@ public class InstantExample {
 		System.out.println("Using Java 8");
 		System.out.println(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli());
 		System.out.println(ZonedDateTime.now().toInstant().toEpochMilli());
-
+		System.out.println();
+		Clock clock = Clock.systemUTC();
+		System.out.println(clock.millis());
 	}
 
 }
