@@ -22,6 +22,7 @@ public class PredicateExample {
 		System.out.println("Element present in list: " + list.stream().anyMatch(i -> i == 4));
 		System.out.println();
 		
+		System.out.println("Example of Predicate - filter: ");
 		System.out.println("No of elements after applying filter: " + list.stream().filter(i -> i > 4).count());
 
 	}

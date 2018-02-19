@@ -38,7 +38,7 @@ public class FunctionExample {
 	 */
 	private static int sum(List<Integer> list) {
 
-		// list.stream().reduce((a,b) -> a+b);
+		// list.stream().reduce((a,b) -> a+b).get();
 		return list.stream()
 							.reduce(0, (a, b) -> a + b);
 	}
