@@ -16,7 +16,7 @@ public class MyClass implements MyFuncInterface, MyFuncInterface2 {
 
 	@Override
 	public void m1() {
-		// MyFuncInterface.super.m1();
+		MyFuncInterface.super.m1();
 		System.out.println("My method m1()");
 	}
 

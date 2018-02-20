@@ -19,6 +19,7 @@ public class StreamExamples {
 								 .mapToObj(i -> "s" + i)
 								 .forEach(System.out::println);
 		
+		
 	}
 
 }

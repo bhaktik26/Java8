@@ -4,6 +4,7 @@ package features;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @SuppressWarnings("javadoc")
@@ -17,15 +18,17 @@ public class SupplierExample {
 		
 		Stream<Integer> stream = Stream.of(new Integer[] { 1, 2, 3 });
 		System.out.println("Stream elements are - ");
-		stream.forEach(System.out::println);
+		//stream.forEach(System.out::println);
 		//stream.count();
 		System.out.println();
 		
 		System.out.println("Stream reusability using Supplier: ");
-		Supplier<Stream<String>> supplier = () -> Stream.of("a", "b", "c", "d", "e");
-		System.out.println(supplier.get().anyMatch(i -> i == "c"));
+		Supplier<Stream<Integer>> supplier = () -> Stream.of(new Integer[] { 1, 2, 3 }) ;
+/*		System.out.println(supplier.get().anyMatch(i -> i == "c"));
 		System.out.println(supplier.get().filter(i -> i.startsWith("b")).allMatch(i -> i == "b"));
-		System.out.println();
+*/		System.out.println();
+System.out.println(supplier.get().collect(Collectors.toList()));
+supplier.get().forEach(System.out::println);
 		
 		List<Integer> list = new ArrayList<>();
 		list.add(1);
@@ -39,8 +42,8 @@ public class SupplierExample {
 		
 
 		
-		
-
+		Stream<String> s = Stream.generate(()->"abc").limit(5);
+		s.forEach(i-> System.out.println(i));
 	}
 
 }

@@ -26,7 +26,7 @@ public class LambdaLazyLoading {
 				 .filter(LambdaLazyLoading::isLessThan10)
 				 .min(Comparator.naturalOrder())
 				 .map(i -> i * i)
-				 .get();
+				 .orElse(0);
 
 	}
 

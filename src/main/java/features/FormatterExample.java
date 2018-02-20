@@ -20,7 +20,7 @@ public class FormatterExample {
 		System.out.println("/////Formatting LocalDate/////");
 		System.out.println("Basic ISO Date format= " + date.format(DateTimeFormatter.BASIC_ISO_DATE));
 		System.out.println("Date in specified pattern= " + date.format(DateTimeFormatter.ISO_DATE));
-		System.out.println("Date in specified pattern= " + date.format(DateTimeFormatter.ofPattern("d-MMMM-uuuu")));
+		System.out.println("Date in specified pattern= " + date.format(DateTimeFormatter.ofPattern("d-MMM-uuuu")));
 		System.out.println("Date as per specified style: " + date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
 		System.out.println();
 
@@ -39,6 +39,8 @@ public class FormatterExample {
 		System.out.println("Date Time using specified date as well as time style: " + ldt.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL, FormatStyle.MEDIUM)));
 		System.out.println("Date Time using specified style: " + ldt.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT)));
 		System.out.println();
+		
+		System.out.println(date.parse("20180111", DateTimeFormatter.BASIC_ISO_DATE));
 
 	}
 

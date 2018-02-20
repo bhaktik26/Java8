@@ -17,7 +17,7 @@ public class FunctionExample {
 		Stream.of(1.0, 2.0, 3.0)
 				.map(i -> i * i)
 				.mapToInt(Double::intValue)
-				.forEach(i -> System.out.println(i));
+				.forEach(System.out::println);
 		
 		System.out.println();
 

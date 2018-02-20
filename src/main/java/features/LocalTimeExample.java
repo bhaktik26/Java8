@@ -25,7 +25,7 @@ public class LocalTimeExample {
 		System.out.println("Current time as per the specified zone: " + zoneTime);
 		System.out.println();
 
-		// System.out.println(ZoneId.getAvailableZoneIds());
+		 System.out.println(ZoneId.getAvailableZoneIds());
 
 		LocalTime lt = LocalTime.ofSecondOfDay(2000);
 		System.out.println("Time with the specified second-of-day: " + lt);
